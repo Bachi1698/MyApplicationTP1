@@ -7,8 +7,10 @@
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="match_parent"
-        android:layout_height="34dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="35dp"
         android:text="Bienvenue dans l'activité 2"
         android:backgroundTint="#170d04"></TextView>
 

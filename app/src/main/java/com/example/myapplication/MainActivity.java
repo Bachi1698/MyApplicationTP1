@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), SecondActivity.class);
                 /** exercice question b*/
-                intent.putExtra("clé",zoneValeur.getText().toString()) ;
+                //intent.putExtra("clé",zoneValeur.getText().toString()) ;
                 startActivity(intent);
 
             }
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             popUp("onPause, l'utilisateur n'a pas demandé la fermeture via un finish()");
         }
-        /**exercice*/
+        /**exercice question a*/
         SharedPreferences settings = getSharedPreferences("cycle_vie_prefs", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = settings.edit();
         editor.putString("valeur", getTxtValeur());

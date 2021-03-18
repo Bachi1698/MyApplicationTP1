@@ -20,14 +20,15 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
         TextView mytextview = findViewById(R.id.textView1);
         Button btnRetour = findViewById(R.id.btnRetour);
-        /**TextView mytextview = findViewById(R.id.textView1);
+        /** exercice question a*/
+        mytextview = findViewById(R.id.textView1);
         SharedPreferences settings = getSharedPreferences("cycle_vie_prefs", Context.MODE_PRIVATE);
-        mytextview.setText(settings.getString("valeur", ""));*/
-        /**exercice question b*/
+        mytextview.setText(settings.getString("valeur", ""));
+        /**exercice question b
         Intent intent = getIntent();
         String v= "" ;
         if (intent != null)   v=intent.getStringExtra("clé") ;
-        mytextview.setText(v);
+        mytextview.setText(v);*/
 
 
         btnRetour.setOnClickListener(new View.OnClickListener() {
