@@ -13,6 +13,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText zoneValeur;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,11 +27,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), SecondActivity.class);
+                /** exercice question b*/
                 intent.putExtra("clé",zoneValeur.getText().toString()) ;
                 startActivity(intent);
 
             }
         });
+
         Button btnEnvoyer = (Button) findViewById(R.id.btnEnvoyer);
         btnEnvoyer.setOnClickListener(btnEnvoyerOnClickListener);
         popUp("onCreate()");
@@ -66,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         popUp("onStart()");
+
     }
     /** ==============================================================
      * Exécutée à chaque passage en premier plan de l'activité.
@@ -78,6 +83,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         popUp("onResume()");
+
+
         SharedPreferences settings = getSharedPreferences("cycle_vie_prefs", Context.MODE_PRIVATE);
         setTxTValeur(settings.getString("valeur", ""));
     }
@@ -104,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             popUp("onPause, l'utilisateur n'a pas demandé la fermeture via un finish()");
         }
+        /**exercice*/
         SharedPreferences settings = getSharedPreferences("cycle_vie_prefs", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = settings.edit();
         editor.putString("valeur", getTxtValeur());

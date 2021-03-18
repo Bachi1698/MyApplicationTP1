@@ -8,42 +8,45 @@
 
 
         <TextView
-            android:text="Valeur : "
             android:id="@+id/TextView01"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            >
-        </TextView>
-        <EditText android:text=""
+            android:text="Valeur : "
+            android:textColor="@color/black"></TextView>
+
+        <EditText
             android:id="@+id/editTxtValeur"
-            android:layout_width="wrap_content"
+            android:layout_width="357dp"
             android:layout_height="wrap_content"
+            android:width="150dip"
             android:ems="5"
-            android:width="150dip">
-        </EditText>
+            android:text=""></EditText>
 
         <Button
-            android:text="Envoyer"
             android:id="@+id/btnEnvoyer"
-            android:layout_width="wrap_content"
+            android:layout_width="197dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp">
-        </Button>
+            android:layout_marginBottom="20dp"
+            android:text="Envoyer"
+            android:backgroundTint="#1f9100"
+            ></Button>
 
         <Button
-            android:text="Activer la seconde activité"
             android:id="@+id/btnAct2"
-            android:layout_width="wrap_content"
+            android:layout_width="195dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp">
+            android:layout_marginBottom="30dp"
+            android:text="suivant"
+            android:backgroundTint="#d65a47">
+
         </Button>
 
 
         <Button
-            android:text="Quitter"
             android:id="@+id/btnQuitter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        </Button>
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Quitter"
+            android:backgroundTint="#cf040b"></Button>
 
 </LinearLayout>

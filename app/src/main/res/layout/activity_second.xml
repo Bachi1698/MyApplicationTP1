@@ -4,18 +4,21 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bienvenue dans l'activité 2">
-    </TextView>
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:text="Bienvenue dans l'activité 2"
+        android:backgroundTint="#170d04"></TextView>
+
     <Button
+        android:id="@+id/btnRetour"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
         android:layout_margin="100dp"
         android:text="retour"
-        android:id="@+id/btnRetour"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:backgroundTint="#9c9792">
 
     </Button>
 </LinearLayout>

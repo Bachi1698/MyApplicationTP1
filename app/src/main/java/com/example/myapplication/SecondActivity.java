@@ -23,6 +23,7 @@ public class SecondActivity extends AppCompatActivity {
         /**TextView mytextview = findViewById(R.id.textView1);
         SharedPreferences settings = getSharedPreferences("cycle_vie_prefs", Context.MODE_PRIVATE);
         mytextview.setText(settings.getString("valeur", ""));*/
+        /**exercice question b*/
         Intent intent = getIntent();
         String v= "" ;
         if (intent != null)   v=intent.getStringExtra("clé") ;
